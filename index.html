@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Продукт - Томаты на ветке</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Главный контейнер -->
+  <div class="container">
+    <!-- Табы -->
+    <div class="tabs">
+      <ul>
+        <li class="tabs__item tabs__item--active" data-tab="description">ОПИСАНИЕ</li>
+        <li class="tabs__item" data-tab="reviews">ОТЗЫВЫ</li>
+        <li class="tabs__item" data-tab="origin">ОТКУДА?</li>
+      </ul>
+    </div>
+
+    <!-- Основной контент -->
+    <div id="description" class="content-section active">
+      <h2>ОПИСАНИЕ</h2>
+      <p>
+        Томаты на ветке красные (помидоры) - более плотные, яркие и ароматные по сравнению с обычными. Они славятся низкой калорийностью и высоким содержанием витаминов, клетчатки, пектина и минеральных веществ. В них содержатся также каротиноиды, кислоты и мощный антиоксидант ликопин.
+      </p>
+      <p>
+        Помидор - незаменимый продукт в мировой кулинарии. Он - основа многочисленных соусов, маринадов, кетчупа, испанского холодного супа Гаспачо или итальянской закуски Капрезе. С ним делают салаты, его тушат, солят и консервируют. Помидоры на веточке особенно красиво смотрятся в запеченном виде.
+      </p>
+
+      <!-- Характеристики и пищевая ценность -->
+      <div class="product-details">
+        <div class="left-column">
+          <h3>ХАРАКТЕРИСТИКИ</h3>
+          <dl class="characteristics">
+            <div class="row">
+              <dt>Страна</dt>
+              <dd>Россия</dd>
+            </div>
+            <div class="row">
+              <dt>Поставщик</dt>
+              <dd>Фермеры: Наталья и Юрий Лейшан</dd>
+            </div>
+            <div class="row">
+              <dt>Тип упаковки</dt>
+              <dd>Крафтовый пакет</dd>
+            </div>
+            <div class="row">
+              <dt>Сертификаты качества</dt>
+              <dd>В наличии</dd>
+            </div>
+          </dl>
+
+          <h3>УСЛОВИЯ ХРАНЕНИЯ</h3>
+          <dl class="storage-conditions">
+            <div class="row">
+              <dt>Срок хранения</dt>
+              <dd>7 дней</dd>
+            </div>
+            <div class="row">
+              <dt>Температура хранения</dt>
+              <dd>от 3° до 7°</dd>
+            </div>
+          </dl>
+        </div>
+
+        <!-- Пищевая ценность -->
+        <div class="right-column">
+          <h3>ПИЩЕВАЯ ЦЕННОСТЬ НА 100 Г</h3>
+          <dl class="nutritional-value">
+            <div class="row">
+              <dt>Энергетическая ценность</dt>
+              <dd>18 ккал</dd>
+            </div>
+            <div class="row">
+              <dt>Белки</dt>
+              <dd>0.9 г</dd>
+            </div>
+            <div class="row">
+              <dt>Жиры</dt>
+              <dd>0.2 г</dd>
+            </div>
+            <div class="row">
+              <dt>Углеводы</dt>
+              <dd>3.9 г</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+
+      <!-- Связанные товары -->
+      <h3>С этим товаром покупают</h3>
+      <div class="product-slider">
+        <div class="product-card">
+          <img src="assets/молоко.jpg" alt="Молоко" class="product-card__image">
+          <h4 class="product-card__title">Молоко 3,2 %</h4>
+          <p class="product-card__description">от Вадима Рошки</p>
+          <p class="product-card__price">95 ₽ / 0,93 л</p>
+          <div class="product-card__rating">
+            <span class="product-card__rating--star">⭐️</span>
+            <span class="product-card__rating--star">⭐️</span>
+            <span class="product-card__rating--star">⭐️</span>
+            <span class="product-card__rating--star">⭐️</span>
+            <span class="product-card__rating--star">⭐️</span>
+          </div>
+          <button class="product-card__button">
+            <span class="product-card__button--icon">🛒</span>
+          </button>
+        </div>
+        <div class="product-card">
+          <img src="assets/орешек.png" alt="Хлеб" class="product-card__image">
+          <h4 class="product-card__title">Хлеб пшеничный</h4>
+          <p class="product-card__description">от Дарьи и Марии</p>
+          <p class="product-card__price">95 ₽ / 930 г</p>
+          <div class="product-card__rating">
+            <span class="product-card__rating--star">⭐️</span>
+            <span class="product-card__rating--star">⭐️</span>
+            <span class="product-card__rating--star">⭐️</span>
+            <span class="product-card__rating--star">⭐️</span>
+            <span class="product-card__rating--star">⭐️</span>
+          </div>
+          <button class="product-card__button">
+            <span class="product-card__button--icon">🛒</span>
+          </button>
+        </div>
+        <div class="product-card">
+          <img src="assets/яички.webp" alt="Яйца" class="product-card__image">
+          <h4 class="product-card__title">Яйца куринные</h4>
+          <p class="product-card__description">от Евгения Рошаль</p>
+          <p class="product-card__price">120 ₽ / 10 шт</p>
+          <div class="product-card__rating">
+            <span class="product-card__rating--star">⭐️</span>
+            <span class="product-card__rating--star">⭐️</span>
+            <span class="product-card__rating--star">⭐️</span>
+            <span class="product-card__rating--star">⭐️</span>
+            <span class="product-card__rating--star">⭐️</span>
+          </div>
+          <button class="product-card__button">
+            <span class="product-card__button--icon">🛒</span>
+          </button>
+        </div>
+        <div class="product-card">
+          <img src="assets/мороженное3.png" alt="Масло" class="product-card__image">
+          <h4 class="product-card__title">Масло сливочное 82 %</h4>
+          <p class="product-card__description">от Вадима Рошки</p>
+          <p class="product-card__price">290 ₽ / 250 г</p>
+          <div class="product-card__rating">
+            <span class="product-card__rating--star">⭐️</span>
+            <span class="product-card__rating--star">⭐️</span>
+            <span class="product-card__rating--star">⭐️</span>
+            <span class="product-card__rating--star">⭐️</span>
+            <span class="product-card__rating--star">⭐️</span>
+          </div>
+          <button class="product-card__button">
+            <span class="product-card__button--icon">🛒</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div id="reviews" class="content-section">
+      <h2>ОТЗЫВЫ</h2>
+        Помогите нам стать ещё лучше. Оставляя отзывы, вы таким образом </br> указываете нам на зоны роста. Мы правда, читаем все отзывы.
+      </p>
+      <button class="submit-review">Оставить отзыв</button>
+    </div>
+
+    <div id="origin" class="content-section">
+      <h2>ОТКУДА?</h2>
+      <img src="assets/Фермен.jpg" alt="Фермер" class="origin__image">
+      <p>
+        Томаты на ветке красные (помидоры) - более плотные, яркие и ароматные по сравнению с обычными. Они славятся низкой калорийностью и высоким содержанием витаминов, клетчатки, пектина и минеральных веществ. В них содержатся также каротиноиды, кислоты и мощный антиоксидант ликопин.
+      </p>
+      <p>
+        Помидор - незаменимый продукт в мировой кулинарии. Он - основа многочисленных соусов, маринадов, кетчупа, испанского холодного супа Гаспачо или итальянской закуски Капрезе.
+      </p>
+      <div class="buttons">
+        <button class="certificates">Сертификаты</button>
+        <button class="about-farmer">О поставщике</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
